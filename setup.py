@@ -1,5 +1,5 @@
 """
-setuptools_setup / install / distribute
+setup / install / distribute
 """
 # ===========================================================================================================================
 # init script env -- ensure cwd = root of source dir
@@ -10,9 +10,7 @@ from inspect import (
    getfile as inspect_getfile,
    currentframe as inspect_currentframe,
 )
-from shutil import (
-   rmtree as shutil_rmtree,
-)
+from shutil import rmtree as shutil_rmtree
 from os import (
    listdir as os_listdir,
    remove as os_remove,
@@ -66,21 +64,21 @@ from PySpeedIT import TESTED_HOST_OS
 if sys_version_info[:2] < (3, 4) or 'linux' not in sys_platform:
    print('''
 
-PySpeedIT is only tested with Python 3.4.1 or higher:\n  current python version: {0:d}.{1:d}\n\n
+      PySpeedIT is only tested with Python 3.4.1 or higher:\n  current python version: {0:d}.{1:d}\n\n
 
-TESTED_HOST_OS: {3:}
-'''.format(sys_version_info[:2][0], sys_version_info[:2][1], TESTED_HOST_OS))
+      TESTED_HOST_OS: {3:}
+      '''.format(sys_version_info[:2][0], sys_version_info[:2][1], TESTED_HOST_OS))
 
 # check some untested options
 for option_temp in {'bdist_dumb', 'bdist_rpm', 'bdist_wininst', 'bdist_egg'}:
    if option_temp in sys_argv:
       print('''
 
-TESTED_HOST_OS you specified an untested option: <{}>\n\n
+         TESTED_HOST_OS you specified an untested option: <{}>\n\n
 
-   This might work or might not work correctly
+            This might work or might not work correctly
 
-'''.format(option_temp))
+         '''.format(option_temp))
 
 
 # ===========================================================================================================================

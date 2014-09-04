@@ -4,6 +4,17 @@ Release History
 
 .. _whats-new:
 
+Version 1.0.1     xxxx-xx-xx
+============================
+
+Features:
+---------
+
+Fixes/Other Changes:
+--------------------
+
+   - small adjustments in setup.py
+
 
 Version 1.0.0     2014-09-04
 ============================
