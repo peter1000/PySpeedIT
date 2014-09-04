@@ -35,12 +35,15 @@ from PySpeedIT import TESTED_HOST_OS
 
 
 class Err(Exception):
-   """Prints an own raised Project Error
+   """ Prints an own raised Project Error
 
    :param error_type: (str) to specify mostly from which part the error comes: e.g. CONFIG
    :param info: (list) list of strings (text info) to print as message: each list item starts at a new line
    """
+   
    def __init__(self, error_type, info):
+      """ Constructor.
+      """
       Exception.__init__(self, error_type, info)
       self.__error_type = error_type
       self.__info = '\n'.join(info)
@@ -64,7 +67,7 @@ This `PySpeedIT` was tested with:
 # public helpers
 # ===========================================================================================================================
 def build_cython_extension(py_or_pyx_file_path, cython_force_rebuild=True):
-   """Build a cython extension from a `.py` or `.pyx` file
+   """ Build a cython extension from a `.py` or `.pyx` file
 
    - build will be done in a sub-folder named `_pyxbld` in the py_or_pyx_file_path
 
@@ -115,7 +118,7 @@ def build_cython_extension(py_or_pyx_file_path, cython_force_rebuild=True):
 
 
 def format_time(time_):
-   """Returns a formatted time string in the Orders of magnitude (time)
+   """ Returns a formatted time string in the Orders of magnitude (time)
 
    :param time_: (float) if if -1.0 return 'NOT-MEASURED''
    :return: (str) formatted time: Orders of magnitude (time)

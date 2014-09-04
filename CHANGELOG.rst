@@ -13,7 +13,8 @@ Features:
 Fixes/Other Changes:
 --------------------
 
-   - small adjustments in setup.py
+   - some adjustments in setup.py
+   - some documentation reformating in utils.py
 
 
 Version 1.0.0     2014-09-04
