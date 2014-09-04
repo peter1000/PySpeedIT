@@ -1,0 +1,12 @@
+recursive-include PySpeedIT *
+include CHANGELOG.rst
+include LICENSE.rst
+include MANIFEST.in
+include README.rst
+include requirements.txt
+include setup.cfg
+include setup.py
+include versioneer.py
+include PySpeedIT/_version.py
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

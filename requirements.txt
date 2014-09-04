@@ -1,0 +1,10 @@
+# setup
+
+# install
+Cython>=0.20.2
+psutil>=2.1.1
+
+# extras
+nose>=1.3.4
+coverage>=3.7.1
+PSphinxTheme>=1.2.4
