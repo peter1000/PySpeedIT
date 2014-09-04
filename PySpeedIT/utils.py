@@ -40,7 +40,7 @@ class Err(Exception):
    :param error_type: (str) to specify mostly from which part the error comes: e.g. CONFIG
    :param info: (list) list of strings (text info) to print as message: each list item starts at a new line
    """
-   
+
    def __init__(self, error_type, info):
       """ Constructor.
       """
