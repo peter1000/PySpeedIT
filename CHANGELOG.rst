@@ -15,6 +15,7 @@ Fixes/Other Changes:
 
    - some adjustments in setup.py
    - some documentation reformating in utils.py
+   - updated requirements
 
 
 Version 1.0.0     2014-09-04
