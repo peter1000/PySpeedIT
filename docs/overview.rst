@@ -14,7 +14,7 @@ Benchmark-IT
 
 It supports also timing of only selected code parts within a function using *Comment lines* with a START/END TAG.
 
-.. code-block:: python
+.. code-block:: python3
 
    START-TAG: # ::SPEEDIT::
    END-TAG:   # **SPEEDIT**

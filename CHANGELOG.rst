@@ -4,7 +4,7 @@ Release History
 
 .. _whats-new:
 
-Version 1.0.1     xxxx-xx-xx
+Version 1.0.1     2014-09-11
 ============================
 
 Features:
@@ -14,8 +14,9 @@ Fixes/Other Changes:
 --------------------
 
    - some adjustments in setup.py
-   - some documentation reformating in utils.py
+   - some documentation reformatting in utils.py
    - updated requirements
+   - adjusted ``.. code-block:: python`` to ``.. code-block:: python3``
 
 
 Version 1.0.0     2014-09-04

@@ -203,7 +203,7 @@ def _profile_it(func, func_positional_arguments, func_keyword_arguments, output_
    :param profileit__repeat: (int) how often the function is repeated: the result will be the sum of all:
       similar to the code below
 
-      .. code-block:: python
+      .. code-block:: python3
 
          for repeat in range(profileit__repeat):
             profiler.enable()

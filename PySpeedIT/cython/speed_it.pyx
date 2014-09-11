@@ -21,7 +21,7 @@ Speed-It-Usage
 
    .. python-example::
 
-      .. code-block:: python
+      .. code-block:: python3
 
          # file: usage_example.py
 
@@ -68,7 +68,7 @@ Speed-It-Usage
 
    .. python-example::
 
-      .. code-block:: python
+      .. code-block:: python3
 
          # file: run_speed_it __usage_example.py
 
@@ -125,7 +125,7 @@ Function which are used for speed_it may not have a return statement because the
 
    **WRONG** return statement
 
-   .. code-block:: python
+   .. code-block:: python3
 
       # helper function is ok to have return statement
       def recip_square(i_):
@@ -147,7 +147,7 @@ If a function defines a default argument it still needs an argument passed on in
 
 .. python-example::
 
-   .. code-block:: python
+   .. code-block:: python3
 
       # function to be used by speed_it
       def approx_pi(n_=100000):
@@ -158,12 +158,9 @@ If a function defines a default argument it still needs an argument passed on in
 
    **WRONG:** `modules__func_tuples` missing argument for : ``n_``
 
-   .. code-block:: python
+   .. code-block:: python3
 
       modules__func_tuples = (
-            # TUPLE format:
-            # [module_path_str, ((name_str, function_name_str, list_of_positional_arguments, dictionary_of_keyword_arguments))]
-
             [path_abspath('calculate_pi.py'), (
                ('calculate pi', 'approx_pi', [], {}),
             )],
@@ -172,12 +169,9 @@ If a function defines a default argument it still needs an argument passed on in
 
    **OK:** `modules__func_tuples` with argument for : ``n_``
 
-   .. code-block:: python
+   .. code-block:: python3
 
       modules__func_tuples = (
-            # TUPLE format:
-            # [module_path_str, ((name_str, function_name_str, list_of_positional_arguments, dictionary_of_keyword_arguments))]
-
             [path_abspath('calculate_pi.py'), (
                ('calculate pi', 'approx_pi', [], {'n_': 100000}),
             )],
@@ -347,14 +341,14 @@ def speed_it(
 
       .. python-example::
 
-         .. code-block:: python
+         .. code-block:: python3
 
             [module_path_str, (
                (name1_str, function1_name_str, list_of_positional_arguments, dictionary_of_keyword_arguments),
                (name2_str, function2_name_str, list_of_positional_arguments, dictionary_of_keyword_arguments),
             ]
 
-         .. code-block:: python
+         .. code-block:: python3
 
             # defining the: modules_func_tuple mapping
             modules__func_tuples = (
@@ -402,7 +396,7 @@ def speed_it(
    :param profileit__repeat: (int) how often the function is repeated: the result will be the sum of all: similar to the code
       below
 
-      .. code-block:: python
+      .. code-block:: python3
 
          for repeat in range(profileit__repeat):
             profiler.enable()

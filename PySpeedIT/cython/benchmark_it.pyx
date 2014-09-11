@@ -9,7 +9,7 @@ Can be used *instead of python's timeit*.
 
 *Benchmark-IT* supports also timing of only selected code parts within a function using *Comment lines* with a START/END TAG.
 
-.. code-block:: python
+.. code-block:: python3
 
    START-TAG: # ::SPEEDIT::
    END-TAG:   # **SPEEDIT**
@@ -194,7 +194,7 @@ class _TimeIT(object):
 
       OK
 
-      .. code-block:: python
+      .. code-block:: python3
 
          def example_formal_func_inner(data_):
             shuffle(data_)
@@ -205,7 +205,7 @@ class _TimeIT(object):
 
       NOT OK
 
-      .. code-block:: python
+      .. code-block:: python3
 
          def example_pep265(data_):
             shuffle(data_)
