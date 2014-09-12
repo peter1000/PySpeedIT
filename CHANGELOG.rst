@@ -4,6 +4,19 @@ Release History
 
 .. _whats-new:
 
+Version 1.0.2     2014-09-12
+============================
+
+Features:
+---------
+
+Fixes/Other Changes:
+--------------------
+
+   - updated requirements
+   - adjusted: README.rst
+
+
 Version 1.0.1     2014-09-11
 ============================
 

@@ -70,7 +70,11 @@ Online Resources
    Source:          `<https://github.com/peter1000/PySpeedIT>`_
    ================ ====================================================
 
+
 Projects using PySpeedIT
 ========================
 
 Known `projects` which make use of: **PySpeedIT**
+
+- `LCONF <https://github.com/peter1000/LCONF>`_
+   L(ight) CONF(iguration): A light - human-friendly, simple readable data serialization format for dynamic configuration.

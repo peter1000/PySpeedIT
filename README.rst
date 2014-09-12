@@ -44,18 +44,21 @@ If you wish to generate your own copy of the documentation, you will need to:
    {SOURCE}/build/sphinx/html/index.html
 
 
-Projects using PySpeedIT
-========================
-
-`projects` which make use of: **PySpeedIT**
-
-
-
 Online Resources
 ================
 - Docs:       http://packages.python.org/PySpeedIT
 - PyPI:       http://pypi.python.org/pypi/PySpeedIT
 - Source:     https://github.com/peter1000/PySpeedIT
+
+
+Projects using PySpeedIT
+========================
+
+`projects` which make use of: **PySpeedIT**
+
+- `LCONF <https://github.com/peter1000/LCONF>`_
+   L(ight) CONF(iguration): A light - human-friendly, simple readable data serialization format for dynamic configuration.
+
 
 |
 |

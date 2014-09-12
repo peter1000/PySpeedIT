@@ -49,6 +49,7 @@ Installing
 
    This can be ignored `__pycache__` is excluded in the `MANIFEST.in` file
 
+
 Documentation
 =============
 The latest copy of this documentation should always be available at: `<http://packages.python.org/PySpeedIT>`_
