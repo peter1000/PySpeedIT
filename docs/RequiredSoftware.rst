@@ -12,11 +12,11 @@ Required Software
 
 .. note:: other versions might also work but this are the once used for development
 
-- Python >= 3.4.1 (3.4.1+  compiled Aug 21 2014)
+- Python >= 3.4.1 (3.4.1+  compiled 20140912)
 
    - `<http://www.python.org/>`_
 
-- Setuptools >= 5.7
+- setuptools >= 5.7
 
    - `<http://pythonhosted.org/setuptools/>`_
 
@@ -25,7 +25,7 @@ Required Software
    - `<http://cython.org/>`_
 
 
-- Nose >= 1.3.4  (for tests)
+- nose >= 1.3.4  (for tests)
 
    - `<https://nose.readthedocs.org/>`_
 
@@ -33,7 +33,7 @@ Required Software
 
    - `<http://nedbatchelder.com/code/coverage>`_
 
-- PSphinxTheme >=1.3.1  (for documentation generation)
+- PSphinxTheme >= 1.3.3  (for documentation generation)
 
    - `<https://github.com/peter1000/PSphinxTheme>`_
 
@@ -49,31 +49,21 @@ Additional Recommended Software Python
 
    - `<http://bitbucket.org/tarek/flake8>`_
 
-- pylint >= 1.3.0  (Pylint is a Python source code analyzer)
+- pylint >= 1.3.1  (Pylint is a Python source code analyzer)
 
    - `<http://www.pylint.org/>`_
+
 
 - pip >= 1.5.6  (A tool for installing and managing Python packages.)
 
    - `<https://pypi.python.org/pypi/pip/>`_
    - `<https://github.com/pypa/pip/>`_
 
-- ReText >= 5.0.0  (ReText is a simple text editor for Markdown and reStructuredText. .rst files editing)
-
-   - `<http://sourceforge.net/p/retext/home/ReText/>`_
-
-   - PyQt5 >= 1.2.2  (needed by ReText: PyQt is a set of Python v2 and v3 bindings for Digia's Qt application framework)
-
-      - `<http://www.riverbankcomputing.co.uk/software/pyqt/intro>`_
-
-      - sip => 4.16.2  (needed by PyQt5: SIP is a tool that makes it very easy to create Python bindings for C and C++ libraries.)
-
-         - `<http://www.riverbankcomputing.co.uk/software/sip/intro>`_
-
 
 Other Recommended Software
 ==========================
 
-- PyCharm Community Edition >= 4.0 138.SNAPSHOT (20140819)  (Excellent IDE for the Python language)
+- PyCharm Community Edition >= 4.0 138.SNAPSHOT (compiled 20140912)  (Excellent IDE for the Python language)
 
    - `<http://www.jetbrains.com/pycharm/>`_
+

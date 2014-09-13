@@ -4,11 +4,18 @@ Release History
 
 .. _whats-new:
 
-Version 1.0.2     2014-09-12
+Version 1.0.3     2014-09-13
 ============================
 
-Features:
----------
+Fixes/Other Changes:
+--------------------
+
+   - updated requirements: fixes theme problem
+   - adjusted docs/RequiredSoftware.rst
+
+
+Version 1.0.2     2014-09-12
+============================
 
 Fixes/Other Changes:
 --------------------
