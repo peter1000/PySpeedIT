@@ -5,6 +5,15 @@ Release History
 
 .. _whats-new:
 
+Version 1.0.4     2014-09-15
+============================
+
+Fixes/Other Changes:
+--------------------
+
+   - renamed tests module to use lower case names
+   
+   
 Version 1.0.3     2014-09-13
 ============================
 
