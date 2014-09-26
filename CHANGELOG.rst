@@ -5,6 +5,15 @@ Release History
 
 .. _whats-new:
 
+Version 1.0.6     2014-09-26
+============================
+
+Fixes/Other Changes:
+--------------------
+
+   - updated missing psutil version
+
+
 Version 1.0.5     2014-09-26
 ============================
 
@@ -21,8 +30,8 @@ Fixes/Other Changes:
 --------------------
 
    - renamed tests module to use lower case names
-   
-   
+
+
 Version 1.0.3     2014-09-13
 ============================
 

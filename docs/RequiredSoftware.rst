@@ -37,7 +37,7 @@ Required Software
 
    - `<https://github.com/peter1000/PSphinxTheme>`_
 
-- psutil >= 2.1.1  (retrieving information on running processes and system utilization (CPU, memory, disks, network))
+- psutil >= 2.1.2  (retrieving information on running processes and system utilization (CPU, memory, disks, network))
 
    - `<http://code.google.com/p/psutil/>`_
 
