@@ -425,7 +425,7 @@ setuptools_setup(
    description="A Collection of: Benchmark-IT, Profile-IT, Line-Memory-Profile-IT, Disassemble-IT.",
    long_description=open('README.rst', 'r').read(),
    classifiers=[
-      'Development Status :: 3 - Alpha',
+      'Development Status :: 5 - Production/Stable',
       'Operating System :: POSIX :: Linux',
       'Programming Language :: Python :: 3',
       'Topic :: Software Development :: Libraries :: Python Modules',

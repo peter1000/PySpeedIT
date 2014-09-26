@@ -738,6 +738,39 @@ def benchmark_functions_in_module(
                dict_['worst_loop_sec'] = format_time(dict_['worst_loop_sec'])
                dict_['second_worst_loop_sec'] = format_time(dict_['second_worst_loop_sec'])
                dict_['all_loops_time_sec'] = format_time(dict_['all_loops_time_sec'])
+      elif benchmarkit__rank_by == 'worst':
+         table = sorted(table, key=itemgetter('best_loop_sec'), reverse=True)
+         compare_reference = table[0]['best_loop_sec']
+         for idx, dict_ in enumerate(table):
+            dict_['compare'] = '{:,.3f}'.format((dict_['best_loop_sec'] / compare_reference) * 100.0)
+            dict_['rank'] = '{:,}'.format(idx + 1)
+            dict_['loops'] = '{:,}'.format(dict_['loops'])
+            if output_in_sec:
+               dict_['avg_loop_sec'] = '{:.11f}'.format(dict_['avg_loop_sec'])
+               dict_['best_loop_sec'] = '{:.11f}'.format(dict_['best_loop_sec'])
+               if dict_['second_best_loop_sec'] == -1.0:
+                  dict_['second_best_loop_sec'] = 'NOT-MEASURED'
+               else:
+                  dict_['second_best_loop_sec'] = '{:.11f}'.format(dict_['second_best_loop_sec'])
+               dict_['worst_loop_sec'] = '{:.11f}'.format(dict_['worst_loop_sec'])
+               if dict_['second_worst_loop_sec'] == -1.0:
+                  dict_['second_worst_loop_sec'] = 'NOT-MEASURED'
+               else:
+                  dict_['second_worst_loop_sec'] = '{:.11f}'.format(dict_['second_worst_loop_sec'])
+               dict_['all_loops_time_sec'] = '{:.11f}'.format(dict_['all_loops_time_sec'])
+            else:
+               dict_['avg_loop_sec'] = format_time(dict_['avg_loop_sec'])
+               dict_['best_loop_sec'] = format_time(dict_['best_loop_sec'])
+               dict_['second_best_loop_sec'] = format_time(dict_['second_best_loop_sec'])
+               dict_['worst_loop_sec'] = format_time(dict_['worst_loop_sec'])
+               dict_['second_worst_loop_sec'] = format_time(dict_['second_worst_loop_sec'])
+               dict_['all_loops_time_sec'] = format_time(dict_['all_loops_time_sec'])
+      else:
+         raise Err('benchmark_functions_in_module', [
+            'WRONG PARAMETER ERROR',
+            '  <benchmarkit__rank_by> must be one of: <best, average, worst> We got: <{}>'.format(benchmarkit__rank_by)
+         ])
+
 
       final_result_rows = ''
       for row in table:

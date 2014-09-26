@@ -104,7 +104,7 @@ Speed-It-Usage
 
    .. note::
 
-      Do not import the module with the functions to speed-it the module is internally loaded  from file
+      Do not import the module with the functions to speed-it: the module is internally loaded  from file
 
 
 For more *examples* see any files in the `PySpeedIT source` :samp:`{SOURCE}/Examples`
@@ -210,7 +210,6 @@ Disassemble-IT OUTPUT HTML
 
 Functions
 =========
-
 .. autofunction:: speed_it
 """
 from importlib.machinery import SourceFileLoader
@@ -417,7 +416,10 @@ def speed_it(
 
          .. seealso:: :py:func:`Reference-Time <PySpeedIT.benchmark_it._helper_get_perf_counter_reference_time>`
 
-   :param benchmarkit__rank_by: (str) ``best`` or ``average``
+   :param benchmarkit__rank_by: (str) ``best``, ``average`` or ``worst``
+
+      ..important:: ``worst`` uses also the `best loop time` but ranks the worst one as: base 100%
+
    :param benchmarkit__run_sec: (float or -1)
 
       - the number of loops per run is scaled to approximately fit the benchmarkit__run_sec
@@ -452,9 +454,9 @@ def speed_it(
    if enable_benchmarkit:
       os_makedirs(benchmarks_dir_path, exist_ok=True)
       # do once some other checks
-      if benchmarkit__rank_by != 'best' and benchmarkit__rank_by != 'average':
+      if benchmarkit__rank_by not in {'best', 'average', 'worst'}:
          raise Err('speed_it', [
-            'enable_benchmarkit: <{}> >> <benchmarkit__rank_by> must be one of: <best, average> We got: <{}>'.format(
+            'enable_benchmarkit: <{}> >> <benchmarkit__rank_by> must be one of: <best, average, worst> We got: <{}>'.format(
                enable_benchmarkit,
                benchmarkit__rank_by
             )

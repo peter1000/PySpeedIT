@@ -1,5 +1,24 @@
 """ Example implementation: <Speed-IT> works only if PySpeedIT is in the path: example installed as: develop
 """
+from inspect import (
+   getfile as inspect_getfile,
+   currentframe as inspect_currentframe,
+)
+from os.path import (
+   abspath as path_abspath,
+   dirname as path_dirname,
+   join as path_join,
+)
+from sys import path as sys_path
+
+
+SCRIPT_PATH = path_dirname(path_abspath(inspect_getfile(inspect_currentframe())))
+PROJECT_ROOT = path_dirname(SCRIPT_PATH)
+
+ROOT_PACKAGE_NAME = 'PySpeedIT'
+ROOT_PACKAGE_PATH = path_join(PROJECT_ROOT, ROOT_PACKAGE_NAME)
+
+sys_path.insert(0, PROJECT_ROOT)
 
 # Import abspath
 from os.path import abspath as path_abspath
@@ -18,7 +37,7 @@ def main():
    modules__func_tuples = (
       # TUPLE format:
       # [module_path_str, (
-      #   (name_str, function_name_str, list_of_positional_arguments, dictionary_of_keyword_arguments)
+      # (name_str, function_name_str, list_of_positional_arguments, dictionary_of_keyword_arguments)
       # )]
 
       [path_abspath('usage_example.py'), (

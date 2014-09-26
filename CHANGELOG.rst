@@ -5,6 +5,15 @@ Release History
 
 .. _whats-new:
 
+Version 1.0.5     2014-09-26
+============================
+
+Features:
+---------
+
+   - `Benchmark-It` supports to use the slowest function as base in ranking
+
+
 Version 1.0.4     2014-09-15
 ============================
 

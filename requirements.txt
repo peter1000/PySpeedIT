@@ -2,7 +2,7 @@
 
 # install
 Cython>=0.21
-psutil>=2.1.1
+psutil>=2.1.2
 
 # extras
 nose>=1.3.4
