@@ -11,7 +11,8 @@ Version 1.0.7     xxxx-xx-xx
 Fixes/Other Changes:
 --------------------
 
-   - updated tested python version to: 3.4.3.4.2rc1
+   - updated tested python version to: 3.4.2rc1
+   - Required Software: setuptools >= 6.0.1
    
    
    
