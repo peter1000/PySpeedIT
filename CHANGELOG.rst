@@ -5,6 +5,16 @@ Release History
 
 .. _whats-new:
 
+Version 1.0.7     xxxx-xx-xx
+============================
+
+Fixes/Other Changes:
+--------------------
+
+   - updated tested python version to: 3.4.3.4.2rc1
+   
+   
+   
 Version 1.0.6     2014-09-26
 ============================
 

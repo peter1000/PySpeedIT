@@ -12,11 +12,11 @@ Required Software
 
 .. note:: other versions might also work but this are the once used for development
 
-- Python >= 3.4.1 (3.4.1+  compiled 20140912)
+- Python >= 3.4.2rc1+ (3.4.2rc1+  compiled 20140927)
 
    - `<http://www.python.org/>`_
 
-- setuptools >= 5.7
+- setuptools >= 6.0.1
 
    - `<http://pythonhosted.org/setuptools/>`_
 
