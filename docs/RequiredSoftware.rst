@@ -1,11 +1,11 @@
 
 
-=====================================
-TEMPLATE_PyPROJECT: Required Software
-=====================================
+============================
+PySpeedIT: Required Software
+============================
 
 
-.. index:: TEMPLATE_PyPROJECT; requirements
+.. index:: PySpeedIT; requirements
 
 Required Software
 =================
