@@ -121,7 +121,7 @@ keep_warnings = True
 # ===========================================================================================================================
 
 # set_psphinxtheme: html_theme_path, html_theme, needs_sphinx
-html_theme_path, html_theme, needs_sphinx = set_psphinxtheme('main-cloud')
+html_theme_path, html_theme, needs_sphinx = set_psphinxtheme('p-main_theme')
 
 # [optional] overwrite some of the default options
 # html_theme_options = {}

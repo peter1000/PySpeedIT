@@ -1,11 +1,11 @@
 
 
-============================
-PySpeedIT: Required Software
-============================
+=====================================
+TEMPLATE_PyPROJECT: Required Software
+=====================================
 
 
-.. index:: PySpeedIT; requirements
+.. index:: TEMPLATE_PyPROJECT; requirements
 
 Required Software
 =================
@@ -16,7 +16,7 @@ Required Software
 
    - `<http://www.python.org/>`_
 
-- setuptools >= 6.0.1
+- setuptools >= 6.0.2
 
    - `<http://pythonhosted.org/setuptools/>`_
 
@@ -33,7 +33,7 @@ Required Software
 
    - `<http://nedbatchelder.com/code/coverage>`_
 
-- PSphinxTheme >= 1.3.3  (for documentation generation)
+- PSphinxTheme >=2.0.0  (for documentation generation)
 
    - `<https://github.com/peter1000/PSphinxTheme>`_
 
