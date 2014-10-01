@@ -53,7 +53,6 @@ Additional Recommended Software Python
 
    - `<http://www.pylint.org/>`_
 
-
 - pip >= 1.5.6  (A tool for installing and managing Python packages.)
 
    - `<https://pypi.python.org/pypi/pip/>`_
