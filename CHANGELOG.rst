@@ -5,6 +5,20 @@ Release History
 
 .. _whats-new:
 
+Version 1.0.8     2014-10-04
+============================
+
+Fixes/Other Changes:
+--------------------
+
+   - updated requirement:
+
+      - PSphinxTheme>=2.0.1
+      - psutil>=2.1.3
+
+   - updated: Required Software
+
+
 Version 1.0.7     2014-10-01
 ============================
 
